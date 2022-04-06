@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.ticket-container {
+  margin-top: 20px;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+.ticket-container .main-info {
+  background-image: url("../assets/city-background.jpg");
+  background-size: 100% 100%;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: pink;
+}
+.ticket-container .main-info .info-container {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  background-color: black;
+  opacity: 0.5;
+  height: 80%;
+  border-radius: 15px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.ticket-container .main-info .info-container div {
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 35%;
+  text-align: center;
+}
+.ticket-container .main-info .info-container div h1 {
+  color: yellow;
+}
+.ticket-container .main-info .info-container div h2 {
+  color: #800080;
+}
+.ticket-container .main-info .info-container div p {
+  font-size: 1.2em;
+}
+.ticket-container .main-info .info-container div img {
+  width: 80%;
+  height: 90%;
+}
+.ticket-container .main-info .info-container div h1 {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.ticket-container .date-info {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  width: 30%;
+  height: 50%;
+}
+.ticket-container .date-info div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../assets/event-background.jpg");
+  background-size: 100% 100%;
+  height: 100%;
+}
+.ticket-container .date-info div h2 {
+  color: yellow;
+}
+.ticket-container .date-info div P {
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 1.3rem;
+  margin-top: 10px;
+  background-image: linear-gradient(to bottom, rgb(247, 8, 127), rgb(245, 164, 245), rgb(53, 3, 36));
+  text-shadow: 0 0 30px black;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */
