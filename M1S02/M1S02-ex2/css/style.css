@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.top-menu {
+  font-size: 0.3em;
+  height: 60px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  position: fixed;
+  width: 100%;
+  background-color: white;
+}
+.top-menu header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.top-menu img {
+  width: 60px;
+  height: 70px;
+}
+.top-menu ul {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.top-menu ul a {
+  text-decoration: none;
+}
+.top-menu li {
+  color: gray;
+  font-size: 20px;
+  list-style-type: none;
+  margin: 20px;
+}
+.top-menu div :hover {
+  color: orange;
+  cursor: pointer;
+}
+
+.section-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.section-group p {
+  margin-top: 20px;
+  width: 50%;
+  word-wrap: break-word;
+}
+.section-group div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+.section-group input {
+  height: 30px;
+  width: 50%;
+  background-image: url(../assets/search3.png);
+  background-repeat: no-repeat;
+  background-size: 20px;
+  padding-left: 5px;
+  background-position: right center;
+  border-radius: 10px;
+  box-shadow: 0 0 3px #CC0000;
+  outline-color: rgb(156, 156, 131);
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  background-color: whitesmoke;
+}
+
+/*# sourceMappingURL=style.css.map */
