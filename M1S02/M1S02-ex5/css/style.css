@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.general-container {
+  width: 100%;
+  height: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-container {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: row;
+  background-color: #f5f5dc;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.contact-container .info-container {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact-container .icons-container {
+  width: 50%;
+  height: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.contact-container img {
+  width: 30px;
+  height: 30px;
+}
+.contact-container .form-container {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact-container .form-container form {
+  width: 100%;
+}
+.contact-container .form-container form label {
+  font-size: large;
+  font-weight: bold;
+}
+.contact-container .form-container form .input-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 8px;
+  width: 100%;
+}
+.contact-container .form-container form input {
+  margin: 20px;
+  border-radius: 5px;
+  height: 30px;
+  width: 80%;
+}
+.contact-container .form-container form textarea {
+  margin: 20px;
+  border-radius: 5px;
+  height: 90px;
+  width: 80%;
+}
+.contact-container .form-container form button {
+  width: 25%;
+  height: 40px;
+  border-radius: 10px;
+  background-color: #5050a0;
+  color: white;
+  margin-left: 40px;
+}
+.contact-container .form-container form button:hover {
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=style.css.map */
