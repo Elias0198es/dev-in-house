@@ -1,4 +1,7 @@
-# dev-in-house
+# DEVinHouse
+
+![1637708155903](https://user-images.githubusercontent.com/62041104/162116345-62086884-1aea-4520-aa4c-d555667cd974.jpg)
+
 
 ## Repositório destinado aos exercícios do curso Dev In House do Senai
 
