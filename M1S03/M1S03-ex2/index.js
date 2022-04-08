@@ -1,0 +1,1 @@
+resultado = window.confirm("Você tem certeza que deseja continuar?");
