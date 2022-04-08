@@ -1,0 +1,1 @@
+alert("Sua Sessão tem 30 minutos!")
