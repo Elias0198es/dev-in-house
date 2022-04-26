@@ -29,9 +29,17 @@ export class FoodContentComponent implements OnInit {
     }
   ]
 
-  constructor() { }
+  
+
+  constructor() { 
+
+  }
 
   ngOnInit(): void {
+  }
+
+  alerta(parameter:string) {
+    alert(`o item clicado foi ${parameter}`)
   }
 
 }

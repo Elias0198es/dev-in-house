@@ -1,5 +1,5 @@
 <ul class="list-group mt-5 mb-5">
-    <li class="list-group-item" *ngFor="let item of listaDeNotificacoes">
+    <li class="list-group-item btn" *ngFor="let item of listaDeNotificacoes" (click)="alerta(item.titulo)">
         {{item.titulo}}
     </li>
 </ul>

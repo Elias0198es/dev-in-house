@@ -34,4 +34,8 @@ export class DrinkContentComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  alerta(parameter:string) {
+    alert(`o item clicado foi ${parameter}`)
+  }
+
 }
