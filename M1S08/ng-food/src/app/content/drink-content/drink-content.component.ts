@@ -1,7 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 
 interface Inotificacao {
-  titulo: string
+  title: string,
+  description: string,
+  date: string,
+  image: string
 }
 
 @Component({
@@ -13,19 +16,34 @@ export class DrinkContentComponent implements OnInit {
 
   listaDeNotificacoes: Inotificacao[] = [
     {
-      titulo: "Laranjada"
+      title: "Laranjada",
+      description: "Limonada das galaxias, a melhor de são paulo",
+      date: "now",
+      image: "https://media.istockphoto.com/photos/glass-of-orange-juice-and-fresh-oranges-picture-id152971676"
     },
     {
-      titulo: "Limão"
+      title: "Limão",
+      description: "soda limonada gostosa e geladinha",
+      date: "now",
+      image: "https://media.istockphoto.com/photos/mojito-cocktail-with-lime-and-mint-picture-id1307546222"
     },
     {
-      titulo: "Vitamina de Tuti-Fruti"
+      title: "Vitamina de Tuti-Fruti",
+      description: "Mistura tudo e da um negoço daora",
+      date: "2d",
+      image: "https://media.istockphoto.com/photos/fruit-juice-picture-id155376375"
     },
     {
-      titulo: "Coca-cola"
+      title: "Coca-cola",
+      description: "O que faz mal é seu preconceito",
+      date: "now",
+      image: "https://media.istockphoto.com/photos/cola-glass-with-ice-cubes-picture-id530428650"
     },
     {
-      titulo: "Maracujá"
+      title: "Maracujá",
+      description: "Para ficar calminho vai de maracujá",
+      date: "2d",
+      image: "https://media.istockphoto.com/photos/orange-slices-and-ice-cubes-dropping-into-a-splashing-cocktail-picture-id683565374"
     }
   ]
 
