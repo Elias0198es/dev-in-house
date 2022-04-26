@@ -1,7 +1,5 @@
 <ul class="list-group mt-5 mb-5">
-    <li class="list-group-item">Laranjada</li>
-    <li class="list-group-item">Limão</li>
-    <li class="list-group-item">Vitamina de Tuti-Fruti</li>
-    <li class="list-group-item">Coca-cola</li>
-    <li class="list-group-item">Maracujá</li>
+    <li class="list-group-item" *ngFor="let item of listaDeNotificacoes">
+        {{item.titulo}}
+    </li>
 </ul>
