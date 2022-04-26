@@ -10,7 +10,6 @@ import { MainContentComponent } from './content/main-content/main-content.compon
 import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
-  { path: '', component: AppComponent },
   { path: 'food', component: FoodContentComponent },
   { path: 'drink', component: DrinkContentComponent },
 ];
