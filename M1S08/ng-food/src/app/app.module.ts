@@ -7,6 +7,13 @@ import { FooterComponent } from './footer/footer.component';
 import { FoodContentComponent } from './content/food-content/food-content.component';
 import { DrinkContentComponent } from './content/drink-content/drink-content.component';
 import { MainContentComponent } from './content/main-content/main-content.component';
+import { Routes, RouterModule } from '@angular/router';
+
+const routes: Routes = [
+  { path: '', component: AppComponent },
+  { path: 'food', component: FoodContentComponent },
+  { path: 'drink', component: DrinkContentComponent },
+];
 
 @NgModule({
   declarations: [
@@ -18,8 +25,10 @@ import { MainContentComponent } from './content/main-content/main-content.compon
     MainContentComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    [RouterModule.forRoot(routes)]
   ],
+  exports: [RouterModule],
   providers: [],
   bootstrap: [AppComponent]
 })
