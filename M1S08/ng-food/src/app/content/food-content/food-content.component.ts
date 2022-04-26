@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 interface Inotificacao {
   title: string,
@@ -14,46 +15,16 @@ interface Inotificacao {
 })
 export class FoodContentComponent implements OnInit {
 
-  listaDeNotificacoes: Inotificacao[] = [
-    {
-      title: "Batata Frita",
-      description: "o melhor da região",
-      date: "now",
-      image: "https://media.istockphoto.com/photos/potatoes-fries-in-a-red-carton-box-isolated-fast-food-picture-id496094410"
-    },
-    {
-      title: "Hamburguer",
-      description: "Feito na hora e no capricho",
-      date: "3d",
-      image: "https://media.istockphoto.com/photos/juicy-hamburger-on-white-background-picture-id1206323282"
-    },
-    {
-      title: "Pizza",
-      description: "direto da itália",
-      date: "2d",
-      image: "https://media.istockphoto.com/photos/margherita-pizza-with-ham-and-pepper-on-white-background-picture-id1189884515"
-    },
-    {
-      title: "Esfira",
-      description: "melhor que no habibis",
-      date: "1d",
-      image: "https://media.istockphoto.com/photos/chocolate-esfiha-picture-id1250106179"
-    },
-    {
-      title: "Torta",
-      description: "coma a vontade",
-      date: "now",
-      image: "https://media.istockphoto.com/photos/chicken-pie-picture-id1316324247?s=612x612"
-    }
-  ]
-
+  listaDeNotificacoes: Inotificacao[] = [];
   
-
-  constructor() { 
+  constructor(private http: HttpClient) { 
 
   }
 
   ngOnInit(): void {
+    this.http.get<Inotificacao[]>('http://localhost:3000/foods').subscribe((result)=>{
+    this.listaDeNotificacoes = result
+    })
   }
 
   alerta(parameter:string) {

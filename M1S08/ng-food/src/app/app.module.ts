@@ -9,6 +9,8 @@ import { DrinkContentComponent } from './content/drink-content/drink-content.com
 import { MainContentComponent } from './content/main-content/main-content.component';
 import { Routes, RouterModule } from '@angular/router';
 
+import { HttpClientModule } from '@angular/common/http';
+
 const routes: Routes = [
   { path: 'food', component: FoodContentComponent },
   { path: 'drink', component: DrinkContentComponent },
@@ -25,7 +27,8 @@ const routes: Routes = [
   ],
   imports: [
     BrowserModule,
-    [RouterModule.forRoot(routes)]
+    [RouterModule.forRoot(routes)],
+    HttpClientModule,
   ],
   exports: [RouterModule],
   providers: [],
