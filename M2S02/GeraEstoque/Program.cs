@@ -5,7 +5,21 @@ namespace GeraEstoque
     {
         public static void CadastrarProduto()
         {
-            System.Console.WriteLine("O Método 'CadastrarProduto' foi acionado!");
+            string? nome;
+            int quantidadeEstoque;
+            decimal valorCompra;
+            decimal valorVenda;
+
+            System.Console.WriteLine("Informe o nome do produto");
+            nome = Console.ReadLine();
+            System.Console.WriteLine("Informe a quantidade em estoque");
+            quantidadeEstoque = Convert.ToInt32(Console.ReadLine());
+            System.Console.WriteLine("Informe o valor de compra. Exemplo: 12.99");
+            valorCompra = Convert.ToDecimal(Console.ReadLine());
+            System.Console.WriteLine("Informe o valor de venda.  Exemplo: 21.99");
+            valorVenda = Convert.ToDecimal(Console.ReadLine());
+
+            Environment.Exit(0);
         }
 
         public static void Main()
