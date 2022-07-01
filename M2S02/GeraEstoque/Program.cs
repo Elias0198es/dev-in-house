@@ -5,6 +5,8 @@ namespace GeraEstoque
     {
         public static void CadastrarProduto()
         {
+            
+            Guid id = Guid.NewGuid();
             string? nome;
             int quantidadeEstoque;
             decimal valorCompra;
@@ -18,6 +20,12 @@ namespace GeraEstoque
             valorCompra = Convert.ToDecimal(Console.ReadLine());
             System.Console.WriteLine("Informe o valor de venda.  Exemplo: 21.99");
             valorVenda = Convert.ToDecimal(Console.ReadLine());
+            System.Console.WriteLine("Produto cadastrado com sucesso!");
+            System.Console.WriteLine("ID: " + id);
+            System.Console.WriteLine("Nome: " + nome);
+            System.Console.WriteLine("Qtd: " + quantidadeEstoque);
+            System.Console.WriteLine("R$ Compra: " + valorCompra);
+            System.Console.WriteLine("R$ Venda: " + valorVenda);
 
             Environment.Exit(0);
         }
