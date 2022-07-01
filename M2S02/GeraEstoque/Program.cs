@@ -3,6 +3,37 @@ namespace GeraEstoque
 {
     class Program
     {
+
+        public static void Menu(){
+                int opcao;
+
+                System.Console.WriteLine("Seja bem vindo ao GeraEstoque 1.0");
+                System.Console.WriteLine(" 1 Cadastrar produto \r\n 2 Consultar produto \r\n 3 Modificar produto \r\n 4 Excluir produto \r\n 0 Sair \r\n Digite a opção:");
+                opcao = Convert.ToInt32(Console.ReadLine());
+
+                switch (opcao)
+                {
+                    case 1:
+                    CadastrarProduto();
+                    break;
+
+                    case 2:
+                    case 3:
+                    case 4:
+                    Menu();
+                    break;
+
+                    case 0:
+                    Environment.Exit(0);
+                    break;
+
+                    default:
+                    System.Console.WriteLine("Opção Inválida");
+                    Environment.Exit(0);
+                    break;
+                }
+            }
+
         public static void CadastrarProduto()
         {
             
@@ -26,29 +57,22 @@ namespace GeraEstoque
             System.Console.WriteLine("Qtd: " + quantidadeEstoque);
             System.Console.WriteLine("R$ Compra: " + valorCompra);
             System.Console.WriteLine("R$ Venda: " + valorVenda);
+            System.Console.WriteLine();
+            System.Console.WriteLine();
+            System.Console.WriteLine("pressione qualquer tecla para voltar ao menu principal");
 
-            Environment.Exit(0);
+            var key = Console.ReadKey();
+            
+            if(key != null){
+                Menu();
+            }
+
         }
 
         public static void Main()
         {
+            Menu();
 
-            int opcao;
-
-            System.Console.WriteLine("Seja bem vindo ao GeraEstoque 1.0");
-            System.Console.WriteLine(" 1 Cadastrar produto \r\n 2 Consultar produto \r\n 3 Modificar produto \r\n 4 Excluir produto \r\n 0 Sair \r\n Digite a opção:");
-            opcao = Convert.ToInt32(Console.ReadLine());
-
-            switch (opcao)
-            {
-                case 1:
-                CadastrarProduto();
-                break;
-
-                default:
-                System.Console.WriteLine("Encerrou o programa");
-                break;
-            }
         }
     }
 }
