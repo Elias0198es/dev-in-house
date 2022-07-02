@@ -1,4 +1,4 @@
-namespace GeraEstoque.Screens
+namespace GeraEstoque.Screen
 {
     public static class  Menu
     {
