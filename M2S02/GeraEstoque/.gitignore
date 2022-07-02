@@ -1,4 +1,4 @@
-/.vscode
-/bin
-/obj/Debug
+.vscode
+bin
+obj/Debug
 **/*.cache
